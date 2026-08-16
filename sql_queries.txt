@@ -1,0 +1,55 @@
+Queries used in sql table JOBS:_ 
+
+
+
+CREATE DATBASE job_Portal;
+USE job_Portal;
+
+CREATE TABLE jobs (
+    id INT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(200) NOT NULL,
+    location VARCHAR(200),
+    salary INT,
+    currency VARCHAR(10),
+    responsibilities VARCHAR(2000),
+    requirements VARCHAR(2000),
+    PRIMARY KEY (id)
+);
+
+
+
+INSERT INTO jobs (
+    title,
+    location,
+    salary,
+    currency,
+    responsibilities,
+    requirements
+)
+VALUES
+(
+    'Software Engineer',
+    'Bangalore',
+    1200000,
+    'INR',
+    'Design, develop, test, and maintain software applications. Collaborate with developers and product teams.',
+    'Bachelor degree in Computer Science. Knowledge of Java, Spring Boot, SQL, Git, and REST APIs.'
+),
+(
+    'Backend Developer',
+    'Hyderabad',
+    1500000,
+    'INR',
+    'Develop and maintain backend services and REST APIs. Work with databases and integrate third-party services.',
+    'Strong knowledge of Java, Spring Boot, MySQL, REST APIs, and database design.'
+),
+(
+    'Full Stack Developer',
+    'Chennai',
+    1800000,
+    'INR',
+    'Build and maintain frontend and backend applications. Develop APIs, integrate databases, and collaborate with the team.',
+    'Experience with Java, Spring Boot, JavaScript, React, MySQL, Git, and REST APIs.'
+);
+
+Select * from jobs;
