@@ -58,6 +58,7 @@ From the registration page:
   <img width="836" height="454" alt="image" src="https://github.com/user-attachments/assets/1b83949f-b2cf-4848-915c-160535318096" />
   <img width="470" height="400" alt="image" src="https://github.com/user-attachments/assets/6a72d430-a2f5-4fb2-b53f-3467e54b7ecf" />
 
+<img width="680" height="284" alt="image" src="https://github.com/user-attachments/assets/334dc78d-64da-4d76-9639-604a9cdddad4" />
 
 
 ### 3. User Login
@@ -67,7 +68,8 @@ From the login page:
 - if valid, the user is redirected to the home page
 - if invalid, an error is shown
 
-- <img width="457" height="432" alt="image" src="https://github.com/user-attachments/assets/fdd07b19-2063-44c9-86ab-0678d0e38e44" />
+- <img width="593" height="399" alt="image" src="https://github.com/user-attachments/assets/307d68e4-1a90-4019-ab7f-e15ce75d20fd" />
+
 
 
 ### 4. Viewing Jobs
@@ -92,6 +94,7 @@ These values are inserted into the `applications` table.
 
 <img width="748" height="442" alt="image" src="https://github.com/user-attachments/assets/c00bf26c-2f70-4d4d-9401-cd98740ae3f7" />
 
+<img width="623" height="307" alt="image" src="https://github.com/user-attachments/assets/7f48b6b9-b88b-4846-9051-9ca0264e9c47" />
 
 ## Database Notes
 The app uses MySQL via SQLAlchemy connection strings and expects tables such as:
