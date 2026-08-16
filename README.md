@@ -106,6 +106,25 @@ The app relies on a `.env` file with a variable named:
 DB_CONNECTION_STRING=mysql+pymysql://<username>:<password>@<host>:<port>/<database>?ssl=true
 ```
 
+## Application working process:-
+-----------------------------
+"The Home button is used to return to the main jobs page after the user has logged in or navigated through the site."
+"When the user clicks Home, the server loads the job listing page and displays the company banner, company description, and list of open positions."
+"Each job card contains an Apply Now button. When clicked, it takes the user to the specific job page."
+"This route looks up the selected job using load_job_from_db(id), checks whether the job exists, and renders the job detail page."
+"On that job detail page, the user fills out the application form and submits it."
+"The Contact Us button is a quick outreach link that opens a pre-filled email using mailto:."
+"This button is meant for asking questions about the role, reporting an issue, contacting support, or requesting more information about hiring."
+"The login form collects the username and password entered by the user."
+"If the credentials are valid, the user is redirected to the home page. If invalid, an error is returned."
+"The register page allows a new user to create an account."
+"The submitted data goes to /register, where the app validates and then inserts it into the users table."
+"If the username already exists, the app raises an error message."
+"After successful registration, the app renders the registered.html page, which tells the user that their account was created successfully."
+"The landing page at / is the first page users see. It provides two main actions: Login and Register."
+"This acts as the entry point for authentication."
+
+
 ## Important Considerations
 - Passwords should ideally be hashed before storing in the database
 - The project is a simple learning/demo project and can be improved with:
@@ -133,6 +152,7 @@ A separate script used to test database connectivity and table creation with SQL
 
 ### Templates
 The HTML pages define the front end and use Bootstrap styling.
+
 
 ## License
 This project is for educational/demo purposes.
