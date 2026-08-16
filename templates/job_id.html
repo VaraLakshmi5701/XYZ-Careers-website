@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ job.title }} - Careers</title>
+  {% include 'bootstrap.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main class="site-container">
+    <h1 class="mb-3"><b>{{ job.title }}</b></h1>
+    <p><strong>Location:</strong> {{ job.location }}</p>
+    {% if job.salary %}<p><strong>Salary:</strong> {{ job.salary }}</p>{% endif %}
+    <h4>Requirements</h4>
+    <ul>
+      {% for line in job.requirements.split('\n') %}
+        <li>{{ line }}</li>
+      {% endfor %}
+    </ul>
+    <h4>Responsibilities</h4>
+    <ol>
+      {% for line in job.responsibilities.split('\n') %}
+        <li>{{ line }}</li>
+      {% endfor %}
+    </ol>
+    {% include 'application.html' %}
+  </main>
+</body>
+</html>

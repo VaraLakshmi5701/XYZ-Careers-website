@@ -1,0 +1,9 @@
+<div class="job-card">
+  <div>
+    <h4 class="mb-1">{{ job['title'] }}</h4>
+    <div class="job-meta"><strong>Location:</strong> {{ job['location'] }} {% if 'salary' in job %} • <strong>Salary:</strong> {{ job['salary'] }}{% endif %}</div>
+  </div>
+  <div>
+    <a href="/job/{{job['id']}}" class="btn btn-outline-primary">Apply Now</a>
+  </div>
+</div>

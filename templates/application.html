@@ -1,0 +1,24 @@
+<h2 class="mt-4">Job Application Form</h2>
+<form method="POST" action="/job/{{ job['id'] }}/apply" class="mt-3">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Education</label>
+    <input type="text" name="education" class="form-control" placeholder="Enter your education" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Work Experience</label>
+    <textarea name="work_experience" class="form-control" rows="4" placeholder="Enter your work experience" required></textarea>
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Resume (URL or text)</label>
+    <input type="text" name="resume_url" class="form-control" placeholder="Link to your resume" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit Application</button>
+</form>

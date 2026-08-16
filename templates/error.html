@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <style>
+        .error-container { font-family: sans-serif; max-width: 450px; margin: 50px auto; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        /* Dynamic Styles based on category */
+        .danger { border-left: 5px solid #dc3545; background-color: #fdf2f2; color: #dc3545; }
+        .warning { border-left: 5px solid #ffc107; background-color: #fffdf2; color: #856404; }
+        .info { border-left: 5px solid #0dcaf0; background-color: #f0faff; color: #055160; }
+        .btn { display: inline-block; margin-top: 15px; padding: 8px 16px; background: #333; color: white; text-decoration: none; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="error-container {{ category }}">
+        <h1> An Error occurred</h1>
+        <h2>{{ title}}</h2>
+        <p>{{ message }}</p>
+        <a href="/" class="btn">Go Back Home</a>
+    </div>
+
+</body>
+</html>

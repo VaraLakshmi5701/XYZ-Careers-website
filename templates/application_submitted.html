@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Application Submitted</title>
+  {% include 'bootstrap.html' %}
+</head>
+<body>
+  {% include 'nav.html' %}
+  <main class="site-container">
+    <div class="mb-4">
+      <div class="p-4 rounded-3" style="background:linear-gradient(90deg, rgba(237,249,255,0.6), rgba(240,255,244,0.6));">
+        <h2 class="mb-1">🎉 Application Submitted</h2>
+        <p class="text-muted mb-0">Thank you for your application. We've received your information and will review it shortly. Expect to hear from us within 3–5 business days.</p>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Submission summary</h5>
+        <dl class="row">
+          <dt class="col-sm-3">Full name</dt>
+          <dd class="col-sm-9">{{ application['name'] }}</dd>
+
+          <dt class="col-sm-3">Email</dt>
+          <dd class="col-sm-9">{{ application['email'] }}</dd>
+
+          <dt class="col-sm-3">Education</dt>
+          <dd class="col-sm-9">{{ application['education'] }}</dd>
+
+          <dt class="col-sm-3">Work experience</dt>
+          <dd class="col-sm-9">{{ application['work_experience'] }}</dd>
+
+          <dt class="col-sm-3">Resume</dt>
+          <dd class="col-sm-9">{{ application['resume_url'] }} </dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="d-flex gap-2">
+      <a href="/home/#open-jobs" class="btn btn-primary">Browse more jobs</a>
+      <a href="/home" class="btn btn-outline-secondary">Return home</a>
+    </div>
+  </main>
+</body>
+</html>
