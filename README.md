@@ -55,6 +55,11 @@ From the registration page:
 - it checks validation rules
 - it inserts the values into the `users` table
 
+  <img width="836" height="454" alt="image" src="https://github.com/user-attachments/assets/1b83949f-b2cf-4848-915c-160535318096" />
+  <img width="470" height="400" alt="image" src="https://github.com/user-attachments/assets/6a72d430-a2f5-4fb2-b53f-3467e54b7ecf" />
+
+
+
 ### 3. User Login
 From the login page:
 - the user submits username and password
@@ -62,11 +67,16 @@ From the login page:
 - if valid, the user is redirected to the home page
 - if invalid, an error is shown
 
+- <img width="457" height="432" alt="image" src="https://github.com/user-attachments/assets/fdd07b19-2063-44c9-86ab-0678d0e38e44" />
+
+
 ### 4. Viewing Jobs
 The home page queries the database for all job listings:
 - `SELECT * FROM jobs`
 - the result is passed to the template
 - job cards are rendered for each item
+
+<img width="556" height="495" alt="image" src="https://github.com/user-attachments/assets/3091cb13-af29-4691-8a94-928dd781b61f" />
 
 ### 5. Applying for a Job
 A user can open a specific job and submit an application form.
@@ -79,6 +89,9 @@ The app collects:
 - job role
 
 These values are inserted into the `applications` table.
+
+<img width="748" height="442" alt="image" src="https://github.com/user-attachments/assets/c00bf26c-2f70-4d4d-9401-cd98740ae3f7" />
+
 
 ## Database Notes
 The app uses MySQL via SQLAlchemy connection strings and expects tables such as:
