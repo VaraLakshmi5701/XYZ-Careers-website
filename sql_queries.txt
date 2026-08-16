@@ -1,5 +1,5 @@
 Queries used in sql table JOBS:_ 
-
+--> for application table, jobs table created the tbales manually in the DB but for the users table creation done via the flask
 
 
 CREATE DATBASE job_Portal;
