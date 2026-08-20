@@ -27,16 +27,14 @@ class User(db.Model):
 @app.route('/')
 def index():
     try:
-        # Simple test query using text()
         db.session.execute(text('SELECT 1'))
         return "Successfully connected to Aiven MySQL!"
     except Exception as e:
         return f"Connection failed: {str(e)}"
 
-# 6. Initialize tables within application context
+
 if __name__ == '__main__':
     with app.app_context():
-        # db.create_all() creates tables defined in models that don't exist yet
         db.create_all() 
         print("Database tables created successfully on Aiven Cloud!")
         
