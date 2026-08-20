@@ -25,11 +25,11 @@ load_dotenv()
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DB_CONNECTION_STRING")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# 3. Initialize the database instance
+#Initializing the database instance
 db = SQLAlchemy()
 db.init_app(app)
 
-# 4. Define Database Models (Tables)
+# Defining Database Tables
 class User(db.Model):
   __tablename__ = 'users'
     
