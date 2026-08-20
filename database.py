@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-# Option 1: Using PyMySQL driver (Recommended for pure Python environments)
+
 engine_pymysql = create_engine(
     os.getenv("DB_CONNECTION_STRING"),
     # echo=True
