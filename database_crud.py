@@ -9,19 +9,11 @@ from sqlalchemy import text
 load_dotenv()
 
 app=Flask(__name__)
-# 1. Replace with your actual Aiven connection details
-  # Or your custom created database name
-
-# 2. Build the Connection String with SSL enforcement
-# Flask-SQLAlchemy uses 'mysql+pymysql://' format
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DB_CONNECTION_STRING")
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# 3. Initialize the database instance
 db = SQLAlchemy()
 db.init_app(app)
 
-# 4. Define Database Models (Tables)
 class User(db.Model):
   __tablename__ = 'users'
     
